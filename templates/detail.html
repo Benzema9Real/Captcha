@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block mytitle %}Подробнее{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+
+<h3>{{book.name}}</h3>
+<h3>{{book.author}}</h3>
+<h4>{{book.title}}</h4>
+<h4>{{book.date}}</h4>
+{% endblock %}
+
+
+</body>
+</html>
