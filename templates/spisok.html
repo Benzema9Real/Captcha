@@ -9,7 +9,14 @@
 <body>
 <h1>Список книг</h1>
 {% for user in users %}
-<li><h3>{{user.name}} <button type="button" class="btn btn-success"><a href="{% url 'mydetail' slug=user.slug %}" >Подробнее</a></button></h3></li>
+{{user.username}}
+{{user.email}}
+{{user.password}}
+{{user.password_confirmation}}
+{{user.first_name}}
+{{user.last_name}}
+{{user.date_of_birth}}
+{{user.avatar}}
 {% endfor %}
 
 
